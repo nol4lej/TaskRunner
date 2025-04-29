@@ -1,0 +1,24 @@
+{
+  "name": "dev_db_conn",
+  "version": "1.0.0",
+  "main": "carganodos.js",
+  "scripts": {
+    "start:js": "node --env-file=.env --watch carga_nodos.js",
+    "start:ts": "ts-node-dev --env-file=.env -r tsconfig-paths/register src/index.ts",
+    "start": "npm run start:ts --",
+    "dev": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3"
+  }
+}
